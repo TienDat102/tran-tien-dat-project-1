@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --color-main: #232323;
+  --color-highlight: #F6D8C3;
+  --color-text: #c8c1c1;
+  --color-text-2: #777777;
+  --bg-1: #EFEFEF;
+  --bg-2: #31363B;
+  --bg-3: #DCE8EB;
+  --font: DM Sans, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container */
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+/* Button */
+.button {
+  display: inline-block;
+  background: var(--color-highlight);
+  padding: 20px 42px;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+}
+.button-highlight:hover {
+  background: #fff;
+  color: var(--color-main);
+}
+.button-highlight:nth-child(1) {
+  margin-right: 15px;
+  border: none;
+  margin-right: 10px;
+}
+.button-highlight:nth-child(2) {
+  background: none;
+  color: white;
+  border: 2px solid #464646;
+}
+.button-highlight:nth-child(2):hover {
+  background: var(--color-highlight);
+  color: var(--color-main);
+  border: none;
+}

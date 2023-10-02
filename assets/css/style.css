@@ -742,11 +742,19 @@ text-align: center;
   margin: 0 0 8px;
   font-size: 17.6px;
 }
+ .section-8 .full-main .inner-wrapper .inner-button{
+    width:calc(90% - calc((90%-20%)/4-10px));
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    right: 20px;
+  }
 .section-8 .full-main .inner-wrapper .button {
   background-color: black;
   color: white;
-  text-align: center;
-  width:calc(90% - calc((90%-20%)/4-10px));
+  text-align: center; 
+  right: 0px;
+  
 }
 @media (max-width: 991.98px) {
   .section-8 .full-main .inner-wrapper{
@@ -757,9 +765,6 @@ text-align: center;
   }
   .section-8 .full-main .inner-wrapper .mini{
     width:40%;
-  }
-  .section-8 .full-main .inner-wrapper .inner-button{
-    width: 30%;
   }
 }
   @media (max-width: 768.98px) {
